@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\actioncreator",
+    "\\actions",
+    "\\common-componant",
+    "\\componant",
+    "\\epics",
+    "\\reducers",
+    "\\services",
+    "\\store"
+  ],
+  "SelectedNode": "\\componant",
+  "PreviewInSolutionExplorer": false
+}
