@@ -26,6 +26,7 @@ import {
     BrowserRouter as Router,
 
     Route,
+    Routes,
     Link
 } from "react-router-dom";
 
@@ -184,7 +185,7 @@ function PersistentDrawerLeft(props) {
                 >
                     <div className={classes.drawerHeader} />
 
-                    <Route path="/builder" component={BuilderForm} />
+                   <Routes> <Route path="/builder" component={BuilderForm} /></Routes>
 
 
 

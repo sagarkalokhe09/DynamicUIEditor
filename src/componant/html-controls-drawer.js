@@ -27,7 +27,6 @@ import MaterialRadioButton from '../common-componant/material-radio-button';
 import MaterialTextField from '../common-componant/material-textfield';
 import MaterialSelect from '../common-componant/material-select';
 import MuiVirtualizedTable from '../common-componant/material-table';
-import CustomizedTreeView from '../common-componant/material-treeview';
 import SimplePopover from '../common-componant/material-popup';
 import UiEditor from '../componant/ui-editor';
 import { useFormik } from 'formik';
