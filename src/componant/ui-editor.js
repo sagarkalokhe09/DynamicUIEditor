@@ -19,7 +19,6 @@ import MaterialCheckBox from '../common-componant/material-checkbox';
 import MaterialDatePicker from '../common-componant/material-datepicker';
 import MaterialRadioButton from '../common-componant/material-radio-button';
 import MaterialSelect from '../common-componant/material-select';
-import CustomizedTreeView from '../common-componant/material-treeview';
 import ReactVirtualizedTable from '../common-componant/material-table';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
@@ -268,7 +267,6 @@ export default function UiEditor(props) {
                 {col.controlType && col.controlType === CONTROL_RADIO_BUTTON && <MaterialRadioButton position={`${rowIndex}-${index}`} draggable onDrag={onDrag} />}
                 {col.controlType && col.controlType === CONTROL_DROPDOWN && <MaterialSelect position={`${rowIndex}-${index}`} data={['item1', 'item2', 'item3']} draggable onDrag={onDrag} />}
                 {col.controlType && col.controlType === CONTROL_BUTTON && <MaterialButton position={`${rowIndex}-${index}`} text={CONTROL_BUTTON} draggable onDrag={onDrag} />}
-                {col.controlType && col.controlType === CONTROL_TREEVIEW && <CustomizedTreeView position={`${rowIndex}-${index}`} draggable onDrag={onDrag} />}
                 {col.controlType && col.controlType === CONTROL_TABLE && <ReactVirtualizedTable position={`${rowIndex}-${index}`} draggable onDrag={onDrag} />}
     
     
@@ -309,7 +307,6 @@ export default function UiEditor(props) {
             {col.controlType && col.controlType === CONTROL_RADIO_BUTTON && <MaterialRadioButton position={`${index}`} draggable onDrag={onDrag} />}
             {col.controlType && col.controlType === CONTROL_DROPDOWN && <MaterialSelect position={`${index}`} data={dropDownData} draggable onDrag={onDrag} />}
             {col.controlType && col.controlType === CONTROL_BUTTON && <MaterialButton position={`${index}`} text={CONTROL_BUTTON} draggable onDrag={onDrag} />}
-            {col.controlType && col.controlType === CONTROL_TREEVIEW && <CustomizedTreeView position={`${index}`} draggable onDrag={onDrag} />}
             {col.controlType && col.controlType === CONTROL_TABLE && <ReactVirtualizedTable position={`${index}`} draggable onDrag={onDrag} />}
     
     
@@ -340,7 +337,6 @@ export default function UiEditor(props) {
                 {col.controlType && col.controlType === CONTROL_RADIO_BUTTON && <MaterialRadioButton position={`${index}`} draggable onDrag={onDrag} />}
                 {col.controlType && col.controlType === CONTROL_DROPDOWN && <MaterialSelect position={`${index}`} data={dropDownData} draggable onDrag={onDrag} />}
                 {col.controlType && col.controlType === CONTROL_BUTTON && <MaterialButton position={`${index}`} text={CONTROL_BUTTON} draggable onDrag={onDrag} />}
-                {col.controlType && col.controlType === CONTROL_TREEVIEW && <CustomizedTreeView position={`${index}`} draggable onDrag={onDrag} />}
                 {col.controlType && col.controlType === CONTROL_TABLE && <ReactVirtualizedTable columns={columnsData} data={tabledata} position={`${index}`} draggable onDrag={onDrag} />}
     
     
@@ -380,7 +376,6 @@ export default function UiEditor(props) {
                 {col.controlType && col.controlType === CONTROL_RADIO_BUTTON && <MaterialRadioButton position={`${index}`} draggable onDrag={onDrag} />}
                 {col.controlType && col.controlType === CONTROL_DROPDOWN && <MaterialSelect position={`${index}`} data={dropDownData} draggable onDrag={onDrag} />}
                 {col.controlType && col.controlType === CONTROL_BUTTON && <MaterialButton position={`${index}`} text={CONTROL_BUTTON} draggable onDrag={onDrag} />}
-                {col.controlType && col.controlType === CONTROL_TREEVIEW && <CustomizedTreeView position={`${index}`} draggable onDrag={onDrag} />}
                 {col.controlType && col.controlType === CONTROL_TABLE && <ReactVirtualizedTable columns={columnsData} data={tabledata} position={`${index}`} draggable onDrag={onDrag} />}
                 {col.showDeleteIcon && < DeleteIcon onClick={(e) => { deleteCell(e,index)}} />}
 
@@ -499,7 +494,6 @@ export default function UiEditor(props) {
                         {!isDragged && configData && configData.controlType === CONTROL_RADIO_BUTTON && <MaterialRadioButton draggable onDrag={onDrag} />}
                         {!isDragged && configData && configData.controlType === CONTROL_DROPDOWN && <MaterialSelect draggable onDrag={onDrag} />}
                         {!isDragged && configData && configData.controlType === CONTROL_BUTTON && <MaterialButton text={CONTROL_BUTTON} draggable onDrag={onDrag} />}
-                        {!isDragged && configData && configData.controlType === CONTROL_TREEVIEW && <CustomizedTreeView draggable onDrag={onDrag} />}
                         {!isDragged && configData && configData.controlType === CONTROL_TABLE && <ReactVirtualizedTable height={40} columns={columnsData} data={tabledata} draggable onDrag={onDrag} />}
 
 
